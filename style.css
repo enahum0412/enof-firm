@@ -1,0 +1,805 @@
+﻿
+/* Commun à toutes les pages */
+
+body {
+    background-color: #f8f8f8;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Basis,helvetica,arial,sans-serif;
+}
+
+.conteneur {
+    width: 100%;
+    margin: 0 auto;
+} 
+
+header {
+    background-color: #f8f8f8;
+    height: 180px;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+#logo img {
+    float: left;
+    width: 180px;
+}
+
+#nav-accueil {
+    float: right;
+    margin-top: 75px;
+}
+
+#nav-accueil ul li {
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+#nav-accueil ul li a {
+    position: relative;
+    margin-left: 80px;
+    color: #4c4c4c;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav-accueil ul li a:hover {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#nav-accueil ul li a#index {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#nav-accueil ul li a#institutionnel {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#nav-accueil ul li a#champsDePratique {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#nav-accueil ul li a#carrieres {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#nav-accueil ul li a#contact {
+    border-bottom: 2px solid #4c4c4c;
+}
+
+#slogan {
+    font-size: 48px;
+    color: #f8f8f8;
+    margin-left: 120px;
+    padding-top: 180px;
+}
+
+a.bouton {
+    margin-left: 120px;
+    background-color: #129468;
+    transition-property: background-color;
+    transition-duration: 1s;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a.bouton:hover {
+    background-color: #006c40;
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: #4c4c4c;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.location {
+    float: left;
+    display: flex;
+}
+
+#ville-mtl, #ville-qc, #ville-laval {
+    color: #129468;
+    font-size: 22px;
+    margin-left: 100px;
+}
+
+#adresse-mtl, #adresse-qc, #adresse-laval {
+    color: #4c4c4c;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#phone-mtl, #phone-qc, #phone-laval {
+    color: #7b7f82;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#droits {
+    margin-left: 100px;
+    margin-top: 200px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#social-media {
+    margin-right: 155px;
+    float: right;
+    width: 100px;
+    border-left: 1px solid #4c4c4c;
+    padding-left: 25px;
+}
+
+/* Index */
+
+.cover-img1 {
+    background: url(images/general/office1.jpg) no-repeat right top fixed;
+    background-size: cover;
+    height: 450px;
+}
+
+.contentAccueil {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    padding: 50px;
+    margin-left: 80px;
+    margin-right: 155px;
+    height: 100%;
+    border-left: 1px solid #0e0e0e;
+}
+
+/* Institutionnel */
+
+.cover-img2 {
+    background: url(images/general/office2.jpg) no-repeat right top fixed;
+    background-size: cover;
+    height: 450px;
+}
+
+.contentInstitutionnel {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    padding: 50px;
+    padding-bottom: 0;
+    margin-left: 80px;
+    margin-right: 155px;
+    height: 100%;
+    border-left: 1px solid #0e0e0e;
+}
+
+.equipe {
+    column-count: 4;
+    column-rule-width: 1px;
+    column-rule-style: solid;
+    column-rule-color: #0e0e0e;
+    text-align: center;
+}
+
+.equipe :first-child {
+    margin-top: 0;
+}
+
+.equipe img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.equipe figcaption {
+    color: #0e0e0e;
+    font-weight: bolder;
+}
+
+.equipe #cv1, #cv2, #cv3, #cv4 {
+    width: 50px;
+}
+
+/* Champs de pratique */
+
+.cover-img3 {
+    background: url(images/general/office3.jpg) no-repeat right top fixed;
+    background-size: cover;
+    height: 450px;
+}
+
+.contentChampsDePratique {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    padding: 50px;
+    margin-left: 80px;
+    margin-right: 155px;
+    height: 100%;
+    border-left: 1px solid #0e0e0e;
+}
+
+.services {
+    column-count: 2;
+    column-rule-width: 1px;
+    column-rule-style: solid;
+    column-rule-color: #0e0e0e;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 50%
+}
+
+.services :first-child {
+    margin-top: 0;
+}
+
+.sectorExpertise {
+    column-count: 4;
+    column-rule-width: 1px;
+    column-rule-style: solid;
+    column-rule-color: #0e0e0e;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 100%
+}
+
+.sectorExpertise :first-child {
+    margin-top: 0;
+}
+
+/* Carrières */
+
+.cover-img4 {
+    background: url(images/general/office4.jpg) no-repeat right top fixed;
+    background-size: cover;
+    height: 450px;
+}
+
+#postes {
+    float: left;
+}
+
+#opportunites {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    font-weight: bolder;
+    border: 0.5px solid #0e0e0e;
+    border-collapse: collapse;
+    margin-left: 0;
+}
+
+#opportunites h2 {
+    text-align: left;
+}
+
+#opportunites td {
+    padding: 5px;
+    border: 0.5px solid #0e0e0e;
+}
+
+#opportunites th {
+    font-size: 14px;
+    padding: 30px 15px 30px 15px;
+    border: 0.5px solid #0e0e0e;
+}
+
+#opportunites img {
+    margin-left: 60px;
+    width: 15px;
+}
+
+#file {
+    color: #7b7f82;
+}
+
+/* Contactez-nous */
+
+.cover-img5 {
+    background: url(images/general/office5.jpg) no-repeat right top fixed;
+    background-size: cover;
+    height: 450px;
+}
+
+#h1-message {
+    color: #0e0e0e;
+    font-size: 28px;
+    float: left;
+    margin-top: 200px;
+    margin-left: 75px;
+}
+
+/* Carrières et Contactez-nous */
+
+.contentContactCarrieres {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    padding: 50px;
+    margin-left: 80px;
+    margin-right: 300px;
+    height: 740px;
+    border-left: 1px solid #0e0e0e;
+}
+
+.contentContactCarrieres #message {
+    color: #0e0e0e;
+    background-color: #f8f8f8;
+    float: right;
+    width: 450px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    margin-left: 55px;
+    background-color: #ededed;
+    transition-property: background-color;
+    transition-duration: 1s;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #505050;
+    font-weight: bold;
+    border: none;
+    width: 80% !important;
+}
+
+input[type=submit]:hover {
+    color: #edf8f3;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+    background-color: #129468;
+    transform: scale(1.1);
+}
+
+/* @media */
+
+
+@media screen and (max-width: 1200px) {
+  .conteneur{
+    width:100%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  
+  header {
+    text-align: center;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 35px; 
+  }
+
+  #logo img {
+    float: none;
+  }
+
+  #nav-accueil {
+    float: none;
+    margin-top: 0;
+  }
+
+  #nav-accueil ul li {
+    margin-bottom: 0;
+  }
+
+  #nav-accueil ul li a {
+    margin-left: 40px;
+    font-size: 14px;
+  }
+
+  .contentAccueil {
+    margin-left: 40px;
+    margin-right: 0;
+    text-align: justify;
+  }
+
+  .contentAccueil h1 {
+    text-align: center;
+  }
+
+  .contentInstitutionnel {
+    margin-left: 40px;
+    margin-right: 0;
+    text-align: justify;
+  }
+
+  .contentInstitutionnel h1 {
+    text-align: center;
+  }
+
+  .equipe {
+    column-count: 2;
+    column-rule-width: 0;
+    column-rule-style: none;
+    text-align: center;
+  }
+
+  .equipe img {
+    width: 150px;
+  }
+  
+  .contentChampsDePratique {
+    margin-left: 40px;
+    margin-right: 0;
+    text-align: justify;
+  }
+
+  .contentChampsDePratique h1 {
+    text-align: center;
+  }
+
+  .services {
+    column-count: 2;
+    column-rule-width: 0;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%
+  }
+
+  .sectorExpertise {
+    column-count: 2;
+    column-rule-width: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .contentContactCarrieres {
+    margin-left: 40px;
+    height: 100%;
+  }
+
+  .contentContactCarrieres h1 {
+    text-align: center;
+  }
+
+  #postes {
+    float: none;
+    width: 500px;
+  }
+
+  #opportunites {
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  #opportunites td {
+    padding: 0 10px;
+  }
+
+  #opportunites th {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #opportunites img {
+    margin-left: 30px;
+  }
+
+  #h1-message {
+    color: #0e0e0e;
+    font-size: 18px;
+    text-align: justify;
+    float: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .contentContactCarrieres #message {
+    float: none;
+    padding-right: 0;
+    padding-bottom: 20px;
+    width: 500px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  .contentContactCarrieres #message {
+      padding-top: 30px;
+      font-size: 11px;
+  }
+
+  input {
+    width: 80%;
+    padding: 5px;
+  }
+
+  textarea {
+    width: 80%;
+    padding: 5px;
+    height: 80px;
+  }
+
+  input[type=submit] {
+    padding: 5px;
+    border-radius: 5px;
+    width: 60% !important;
+    margin-left: 55px;
+  }
+
+  footer {
+      height: 100%;
+  }
+
+  .location{
+    display: block;
+    margin-top: 20px;
+  }
+
+  #social-media {
+    margin-top: 20px;
+    margin-right: 50px;
+    width: 100px;
+    border-left: 1px solid #4c4c4c;
+    padding-left: 25px;
+  }
+
+  #droits {
+    margin-left: 100px;
+    margin-top: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  header {
+    text-align: center;
+    height: 160px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 35px; 
+  }
+
+  #logo img {
+    float: left;
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  #nav-accueil {
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  #nav-accueil {
+    padding: 0;
+    width: 220px;
+  }
+
+  #nav-accueil ul li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  #nav-accueil ul li a {
+    font-size: 12px;
+  }
+
+  .cover-img1 {
+    background: url(images/general/office1_2.jpg) no-repeat right top fixed;
+  }
+
+  .cover-img2 {
+    background: url(images/general/office2_2.jpg) no-repeat right top fixed;
+  }
+
+  .cover-img3 {
+    background: url(images/general/office3_2.jpg) no-repeat right top fixed;
+  }
+
+  .cover-img4 {
+    background: url(images/general/office4_2.jpg) no-repeat right top fixed;
+  }
+
+  .cover-img5 {
+    background: url(images/general/office5_2.jpg) no-repeat right top fixed;
+  }
+
+  #slogan {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+
+  a.bouton {
+    margin-left: 40px;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .contentAccueil {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    text-align: justify;
+    border-left: 0;
+  }
+
+  .contentAccueil h1 {
+    text-align: center;
+  }
+
+  .contentInstitutionnel {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    text-align: justify;
+    border-left: 0;
+  }
+
+  .contentInstitutionnel h1 {
+    text-align: center;
+  }
+
+  .equipe {
+    column-count: 1;
+    column-rule-width: 0;
+    column-rule-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .equipe img {
+    width: 120px;
+  }
+  
+  .equipe figcaption {
+    font-size: 14px;
+  }
+
+  .equipe #cv1, #cv2, #cv3, #cv4 {
+    width: 30px;
+  }
+
+  .contentChampsDePratique {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    text-align: justify;
+    border-left: 0;
+  }
+
+  .contentChampsDePratique h1 {
+    text-align: center;
+  }
+
+  .services {
+    column-count: 1;
+    column-rule-width: 0;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%
+  }
+
+  .sectorExpertise {
+    column-count: 1;
+    column-rule-width: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .contentContactCarrieres {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    border-left: none;
+  }
+
+  .contentContactCarrieres h1 {
+    text-align: center;
+  }
+
+  #postes {
+    float: none;
+    width: 300px;
+  }
+
+  #opportunites {
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 0;
+  }
+
+  #opportunites td {
+    padding: 0 5px;
+  }
+
+  #opportunites th {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #opportunites img {
+    margin-left: 15px;
+  }
+
+  #h1-message {
+    color: #0e0e0e;
+    font-size: 18px;
+    text-align: justify;
+    float: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .contentContactCarrieres #message {
+    float: none;
+    padding-bottom: 20px;
+    width: 300px;
+    font-weight: bold;
+    margin-left: 0;
+    padding-top: 30px;
+    font-size: 11px;
+  }
+
+  input {
+    width: 80%;
+    padding: 5px;
+  }
+
+  textarea {
+    width: 80%;
+    padding: 5px;
+    height: 80px;
+  }
+
+  input[type=submit] {
+    padding: 5px;
+    border-radius: 5px;
+    width: 60% !important;
+    margin-left: 40px;
+  }
+
+  footer {
+      height: 100%;
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .location {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .location #ville-mtl, #ville-qc, #ville-laval, #adresse-mtl, #adresse-qc, #adresse-laval, #phone-mtl, #phone-qc, #phone-laval {
+    margin-left: 40px;
+  }
+
+  #social-media {
+    display: inline-block;
+    float: none;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  #social-media img {
+    width: 40px;
+    margin-right: 0;
+  }
+
+  #droits {
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+}
