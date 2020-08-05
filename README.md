@@ -5,4 +5,4 @@ ENOF Firm is a simple example of a simple HTML/CSS page created as a model. It i
 ENOF Firm uses only HTML and CSS to create the front-end design that you can see through the preview link below.
 
 # Preview
-https://htmlpreview.github.io/?https://raw.githubusercontent.com/enahum0412/enof-firm/master/index.html
+https://enof-firm.netlify.app/
